@@ -1,0 +1,21 @@
+<div class="row">
+	<div class="col-lg-12 text-center">
+		<span class="title">chentoocool</span>
+	</div>
+</div>
+<div class="row">
+	<div class="col-lg-6 text-center">
+		Updates
+		{{#each updates}}
+		<div class="row">
+			<div class="col-lg-12">
+				<a href="{{update.link}}">{{update.name}}</a>
+			</div>
+		</div>
+		{{/each}}
+	</div>
+	<div class="col-lg-6 text-center">
+		Current Build
+		<a href="{{current.link}}">{{current.name}}</a>
+	</div>
+</div>
