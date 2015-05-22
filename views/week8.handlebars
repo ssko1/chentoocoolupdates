@@ -1,0 +1,58 @@
+<a class="btn btn-info" href="/">Home</a>
+
+<div class="row">
+	<div class="col-lg-12">
+		<b>Technical aspects of what we did this week:</b>
+	</div>
+</div>
+<div class="row">
+	<div class="col-lg-12">
+>SQL Queries to gather required data, eg:
+<pre>
+SELECT listings."State" as state,
+		listings."RegionName" as regionName,
+		listings."Value" as listValue,
+		listings."Month" as month,
+		listings."Year" as year,
+		sales."Value" as saleValue
+from zillow_zip_median_listing_price_all_homes_norm as listings,
+	 zillow_zip_median_sold_price_all_homes_norm as sales
+where listings."State"='CA'
+  and listings."City"='San Diego'
+  and listings."RegionName"=sales."RegionName"
+  and listings."Month"=sales."Month"
+  and listings."Year"=sales."Year"
+</pre>
+We have a LOT more of these.
+	</div>
+</div>
+<div class="row">
+	<div class="col-lg-12">
+		>We installed the google maps API into our app.
+	</div>
+</div>
+<div class="row">
+	<div class="col-lg-12">
+		<b>What we plan on doing:</b>	
+	</div>
+</div>
+<div class="row">
+	<div class="col-lg-12">
+		>Google maps is going to be difficult I bet, but we're planning on fully implementing it by next week.	
+	</div>
+</div>
+<div class="row">
+	<div class="col-lg-12">
+		>Create D3 Bar chart and line graph visualizations with direct data on the side as well to accompany it.	I need to learn D3 again.	
+	</div>
+</div>
+<div class="row">
+	<div class="col-lg-12">
+		<b>What is actually in our way</b>
+	</div>
+</div>
+<div class="row">
+	<div class="col-lg-12">
+		>When dealing with Different areas, different months and years, data is really hard to order, so I probably have to figure that out: combining the month and year into a date object, which will then be parsed into a sort function that can order by month 1 - 12 and year 1998 - 2015.
+	</div>
+</div>
