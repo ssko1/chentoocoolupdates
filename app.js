@@ -22,6 +22,10 @@ app.get('/week8', function(req, res) {
 	res.render('week8');
 })
 
+app.get('/week9', function(req, res) {
+	res.render('week9')
+})
+
 http.createServer(app).listen(app.get('port'), function() {
     console.log('Express server listening on port ' + app.get('port'));
 });
